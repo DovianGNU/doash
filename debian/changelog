@@ -1,3 +1,18 @@
+dash (0.5.12-7) unstable; urgency=medium
+
+  [ Andrej Shadura ]
+  * Drop obsolete ash package (Closes: #920644)
+  * Bump debhelper from old 12 to 13.
+  * Set Rules-Requires-Root: no.
+  * Bump Standards-Version to 4.6.2.
+  * Upstream patch:
+    - Implement pipefail option (Closes: #1071238)
+
+  [ Luca Boccassi ]
+  * Drop versioned dependencies satisfied since Buster (Closes: #1057323)
+
+ -- Andrej Shadura <andrewsh@debian.org>  Fri, 17 May 2024 17:12:12 +0200
+
 dash (0.5.12-6) unstable; urgency=medium
 
   [ Johannes Schauer Marin Rodrigues ]
