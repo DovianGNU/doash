@@ -1,3 +1,9 @@
+dash (0.5.12-10) UNRELEASED; urgency=medium
+
+  * d/t/mmdebstrap: remove unused parsing of distribution from changelog
+
+ -- Dominik Viererbe <dominik.viererbe@canonical.com>  Thu, 20 Jun 2024 15:10:44 +0300
+
 dash (0.5.12-9) unstable; urgency=medium
 
   [ Helmut Grohne ]
