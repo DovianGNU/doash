@@ -1,8 +1,13 @@
 dash (0.5.12-10) UNRELEASED; urgency=medium
 
   * d/t/mmdebstrap: remove unused parsing of distribution from changelog
+  * incorporate Ubuntu DEP17 /usr merge changes:
+  
+    [ Julian Andres Klode ]
+    - debian/shells.d/dash: move files to /usr
+    - debian/tests/smoke: add /bin/dash link tests
 
- -- Dominik Viererbe <dominik.viererbe@canonical.com>  Thu, 20 Jun 2024 15:10:44 +0300
+ -- Dominik Viererbe <dominik.viererbe@canonical.com>  Thu, 04 Jul 2024 13:39:49 +0300
 
 dash (0.5.12-9) unstable; urgency=medium
 
