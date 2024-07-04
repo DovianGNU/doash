@@ -23,12 +23,18 @@ like(qx(dpkg -L dash),
 
 is(qx(echo hello), "hello\n");
 
+my $diverter = qx(dpkg-divert --listpackage /bin/sh);
+
+ok($diverter eq "" or $diverter eq "LOCAL\n", '/bin/sh not diverted or local diversion');
+ok($diverter ne "dash\n", '/bin/sh not diverted by dash');
+ok($diverter ne "bash\n", '/bin/sh not diverted by bash');
+ok(like(realpath('/bin/sh'), qr{^(?:/usr)?/bin/dash}));
+
 my $diverter = qx(dpkg-divert --listpackage /usr/bin/sh);
 
 ok($diverter eq "" or $diverter eq "LOCAL\n", '/usr/bin/sh not diverted or local diversion');
 ok($diverter ne "dash\n", '/usr/bin/sh not diverted by dash');
 ok($diverter ne "bash\n", '/usr/bin/sh not diverted by bash');
-ok(like(realpath('/bin/sh'), qr{^(?:/usr)?/bin/dash}));
 ok(like(realpath('/usr/bin/sh'), qr{^(?:/usr)?/bin/dash}));
 
 my $tmpdir = File::Temp->newdir();
