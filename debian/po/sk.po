@@ -45,7 +45,7 @@ msgstr ""
 #: ../dash.templates:1001
 msgid ""
 "To keep using your preferred default shell, you need to set up another "
-"diversion for /usr/bin/sh. If you don’t do so now, your changes to /bin/sh "
+"diversion for /usr/bin/sh. If you don't do so now, your changes to /bin/sh "
 "will be lost after this upgrade."
 msgstr ""
 "Aby ste mohli naďalej používať svoj preferovaný predvolený shell, musíte "
