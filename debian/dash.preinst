@@ -11,11 +11,18 @@ if [ "$1" = upgrade ] && dpkg --compare-versions "$2" lt 0.5.12-9~; then
 		# There is a diversion of /bin/sh and it is not our own
 		# diversion to /bin/sh.distrib that will be removed in
 		# postinst and there is no matching diversion of /usr/bin/sh.
-		. /usr/share/debconf/confmodule
-		db_input critical dash/ineffectivediversion || true
-		db_go || true
-		# We have no other debconf usage in dash, so we can purge rightaway.
-		db_purge || true
+		if [ -f /usr/share/debconf/confmodule ]; then
+			. /usr/share/debconf/confmodule
+			db_input critical dash/ineffectivediversion || true
+			db_go || true
+			# We have no other debconf usage in dash, so we can purge rightaway.
+			db_purge || true
+		else
+			echo "ERROR: Found ineffective diversion of /bin/sh!" >&2
+			echo "To keep using alternative default shell, divert /usr/bin/sh instead." >&2
+			echo "Aborting upgrade. Resolve the issue and try again." >&2
+			exit 1
+		fi
 	fi
 fi
 
