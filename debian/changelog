@@ -1,4 +1,4 @@
-dash (0.5.12-10) UNRELEASED; urgency=medium
+dash (0.5.12-10) unstable; urgency=medium
 
   [ Dominik Viererbe ]
   * d/t/mmdebstrap: remove unused parsing of distribution from changelog
@@ -17,7 +17,7 @@ dash (0.5.12-10) UNRELEASED; urgency=medium
   * Apply upstream patch to fix here-doc handling.
   * Add Belarusian and Slovak translations for debconf templates.
 
- -- Andrej Shadura <andrewsh@debian.org>  Fri, 03 Jan 2025 14:36:00 +0100
+ -- Andrej Shadura <andrewsh@debian.org>  Fri, 03 Jan 2025 15:13:44 +0100
 
 dash (0.5.12-9) unstable; urgency=medium
 
