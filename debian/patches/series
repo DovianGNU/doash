@@ -10,4 +10,5 @@
 0019-builtin-Actually-accept-ulimit-r.patch
 0020-Update-manpages.patch
 0021-jobs-Implement-pipefail-option.patch
+0022-builtin-Align-test-nt-and-ot-with-POSIX.1-2024.patch
 9001-Add-privmode.diff
