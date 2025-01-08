@@ -17,7 +17,8 @@ fetch-snapshots:
       do
         debsnap -v --binary dash $v --force -a amd64
       done
-  needs: []
+  needs:
+    - extract-source
   artifacts:
     paths:
       - binary-dash
