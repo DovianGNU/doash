@@ -1,3 +1,10 @@
+dash (0.5.12-11) unstable; urgency=medium
+
+  [ Johannes Schauer Marin Rodrigues ]
+  * debian/rules: remove debconf from ${misc:Depends} (Closes: #1092494).
+
+ -- Andrej Shadura <andrewsh@debian.org>  Wed, 08 Jan 2025 18:07:23 +0100
+
 dash (0.5.12-10) unstable; urgency=medium
 
   [ Dominik Viererbe ]
