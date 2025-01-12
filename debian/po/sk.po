@@ -20,7 +20,7 @@ msgstr ""
 #. Description
 #: ../dash.templates:1001
 msgid "/bin/sh is ineffectively diverted"
-msgstr "/bin/sh je neúčinne presmerovaný"
+msgstr "Nefunkčné presmerovanie /bin/sh"
 
 #. Type: error
 #. Description
