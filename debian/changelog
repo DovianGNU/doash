@@ -1,3 +1,26 @@
+dash (0.5.12-12) UNRELEASED; urgency=medium
+
+  [ Andrej Shadura ]
+  * Add Dutch translation for debconf templates.
+    Thanks to Frederik Himpe.
+  * Update the Slovak debconf translation.
+  * Add a preliminary Ukrainian debconf template translation, needs verification.
+  * Add missing-debconf-dependency-for-preinst lintian override.
+
+  [ Andika Triwidada ]
+  * Add Indonesian translation for debconf templates.
+
+  [ Alexander Golubev ]
+  * Add Russian translation for debconf templates.
+
+  [ bubu ]
+  * Add French translation for debconf templates (Closes: #1093592).
+
+  [ Hermann-Josef Beckers ]
+  * Add German translation for debconf templates (Closes: #1092855).
+
+ -- Andrej Shadura <andrewsh@debian.org>  Wed, 22 Jan 2025 09:13:17 +0100
+
 dash (0.5.12-11) unstable; urgency=medium
 
   [ Johannes Schauer Marin Rodrigues ]
