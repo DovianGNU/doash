@@ -20,21 +20,18 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../dash.templates:1001
-#, fuzzy
 msgid "/bin/sh is ineffectively diverted"
 msgstr "Перенаправлення /bin/sh не буде працювати"
 
 #. Type: error
 #. Description
 #: ../dash.templates:1001
-#, fuzzy
 msgid "A diversion of /bin/sh was found."
 msgstr "Виявлено перенаправлення /bin/sh."
 
 #. Type: error
 #. Description
 #: ../dash.templates:1001
-#, fuzzy
 msgid ""
 "After this update, dash will be recorded in the dpkg database at its new "
 "path, /usr/bin/sh. Since there is no diversion set for /usr/bin/sh, the "
@@ -47,7 +44,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../dash.templates:1001
-#, fuzzy
 msgid ""
 "To keep using your preferred default shell, you need to set up another "
 "diversion for /usr/bin/sh. If you don't do so now, your changes to /bin/sh "
@@ -60,7 +56,6 @@ msgstr ""
 #. Type: error
 #. Description
 #: ../dash.templates:1001
-#, fuzzy
 msgid ""
 "Once the upgrade is complete, the diversion for /bin/sh will no longer be "
 "needed and can be removed."
